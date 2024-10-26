@@ -1,0 +1,26 @@
+*{font: Arial, Helvetica, sans-serif;}
+    
+
+body{
+    margin: 40px;
+}
+main{
+    margin: 30px;
+    padding: 20px;
+    background-color: wheat;
+    border-left: 5px dotted brown;
+    border-radius: 10px;
+}
+.milestone {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.milestone img{
+    height: auto;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow:  20px;
+}
