@@ -11,6 +11,7 @@ main{
     border-left: 5px dotted brown;
     border-radius: 10px;
 }
+
 .milestone {
     display: flex;
     flex-direction: column;
@@ -23,4 +24,8 @@ main{
     width: 60%;
     border-radius: 15px;
     box-shadow:  20px;
+    transition: transform 0.5s ease-in-out;
+}
+.milestone img:hover{
+    transform: rotateY(20deg) rotateX(10deg);
 }

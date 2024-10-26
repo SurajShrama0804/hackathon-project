@@ -23,4 +23,9 @@ main{
     width: 60%;
     border-radius: 15px;
     box-shadow:  20px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+.milestone img:hover{
+    transform: scale(1.1) translateY(-10px);
+    filter: brightness(1.1);
 }
