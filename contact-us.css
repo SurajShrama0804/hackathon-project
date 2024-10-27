@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  background-image: url(https://th.bing.com/th/id/OIP.0uX8HeoSrkJZVMfGL9jMRgHaE8?w=276&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+  color: black;
+}
+section{
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgb(211, 35, 54);
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-image: url(https://th.bing.com/th/id/OIP.QFBjZBTLxtph9vmzDHgjiAHaFj?w=204&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: transparent;
+  box-shadow: 5px 5px 5px 5px black;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 5px black;
+}
+
+
+button:hover {
+  background-color:  #007bff;
+}
+footer{
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #000000, #FF0000);
+  border-radius: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 10%;
+}
