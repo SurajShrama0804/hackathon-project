@@ -8,7 +8,14 @@ body{
 main{
     margin: 40px;
 }
-
+img{
+    box-shadow: 0 4px 20px rgba(256, 256, 0256, 0.2);
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+img:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 58px 80px rgba(256, 256, 256, 0.3);
+}
 .video-background {
     position: fixed;
     top: 0;
@@ -29,6 +36,38 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.box{
+    width: 65%;
+    height: auto;
+    max-height: 400px;
+    background: rgb(19, 13, 1);
+    border: 5px solid black;
+    border-radius: 40px;
+    font-size: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(256, 256, 0256, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover{
+    overflow: scroll;
+    transform: translateY(-10px) scale(1.05);
+    background-color: black;
+    box-shadow: 0px 58px 80px rgba(256, 256, 256, 0.3);
+}
+.box:hover::-webkit-scrollbar{
+    display: none;
+}
+.left{
+    display: flex;
+    gap: 15px;
+}
+
+.right{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
 header{
     border-radius: 8px;
     display: flex;
@@ -39,38 +78,9 @@ header{
     color: #000;
 }
 header:hover{
-   background: linear-gradient(90deg, #000000, #FF0000); 
+   background: linear-gradient(90deg,  #3B1E54, #9B7EBD, #D4BEE4); 
 }
-.dropbtn {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 80px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 8px;
-    border: 3px solid #39dabe;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 12px;
-    text-decoration: none;
-    display: block;
-  }
+
   
   .dropdown-content a:hover {background-color: #f1f1f1}
   
@@ -79,7 +89,7 @@ header:hover{
   }
   
   .dropdown:hover .dropbtn {
-    background-color:#ff5733 ;
+    background-color:#D4BEE4 ;
     border-radius: 10px;
 }
 .button{

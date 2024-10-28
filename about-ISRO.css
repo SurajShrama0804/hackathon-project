@@ -4,12 +4,20 @@ body{
     z-index: 1;
     padding: 0px;
     width: fit-content;
-    color: rgb(250, 20, 51);
+    color: rgb(10, 3, 4);
     background: linear-gradient(90deg,rgb(71, 7, 71) 15%,rgb(72 37 83) 50%,rgb(4 5 75) 91%);
 }
 main{
   margin-left: 5%;
     margin-right: 5%;
+}
+img{
+    box-shadow: 0 4px 20px rgba(256, 256, 0256, 0.2);
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+img:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 58px 80px rgba(256, 256, 256, 0.3);
 }
 .video-background {
   position: fixed;
@@ -32,13 +40,9 @@ main{
   transform: translate(-50%, -50%);
 }
 
-section{
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px rgb(211, 35, 54);
-}
 header{
     border-radius: 8px;
-    background: linear-gradient(90deg, #000000, #FF0000);
+    background: linear-gradient(90deg, #3B1E54, #9B7EBD, #D4BEE4);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,9 +88,41 @@ header{
   }
   
   .dropdown:hover .dropbtn {
-    background-color:#ff5733 ;
+    background-color:#D4BEE4 ;
     border-radius: 10px;
 }
+.box{
+  width: 65%;
+  height: auto;
+  max-height: 400px;
+  background: wheat;
+  border: 5px solid black;
+  border-radius: 40px;
+  font-size: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(256, 256, 0256, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover{
+  overflow: scroll;
+  transform: translateY(-10px) scale(1.05);
+  background-color: wheat;
+  box-shadow: 0px 58px 80px rgba(256, 256, 256, 0.3);
+}
+.box:hover::-webkit-scrollbar{
+  display: none;
+}
+.left{
+  display: flex;
+  gap: 15px;
+}
+
+.right{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 15px;
+}
+
 .button{
     padding: 15px;
     background-color: black;

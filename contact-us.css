@@ -13,6 +13,14 @@ section{
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgb(211, 35, 54);
 }
+img{
+    box-shadow: 0 4px 20px rgba(256, 256, 0256, 0.2);
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+img:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 58px 80px rgba(256, 256, 256, 0.3);
+}
 
 .container {
   max-width: 500px;
@@ -61,7 +69,7 @@ button {
 
 
 button:hover {
-  background-color:  #007bff;
+  background-color:  #010203;
 }
 footer{
   text-align: center;
